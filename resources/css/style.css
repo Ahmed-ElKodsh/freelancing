@@ -207,6 +207,68 @@ button {
 }
 
 
+.Field {
+  display: flex;
+}
+
+.SearchBox-query {
+  // Shrink and grow as needed, but never shrink so
+  // small that we can't read the placeholder
+  flex: 1 0 8em;
+}
+
+.SearchBox-submitBtn {
+  // Never shrink or grow
+  flex: 0 0 auto;
+}
+
+.Field--is-search:before {
+  // Don't shrink or grow and use a default size
+  flex: 0 0 2.75em;
+
+  // Use flexbox to center the icon
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* VISUAL DESIGN DETAILS */
+.SearchBox {
+  margin: 3rem auto 0;
+  max-width: 80%;
+}
+
+.Field--is-search:before {
+    border-radius: 2px 0 0 2px;
+    background: #ccc;
+
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    color: #797979;
+
+    content: "\f002";
+}
+
+.SearchBox-query {
+    background: #e9e9e9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.SearchBox-query:focus {
+  background: white;
+}
+
+.SearchBox-submitBtn {
+  border-radius: 0 2px 2px 0;
+  background: #9792E3;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #EDFFEC;
+}
+
 /*------section1----*/
 .section1{
     font-family: 'Open Sans';
@@ -237,8 +299,8 @@ button {
 
 .section2 div {
     padding-top: 100px; 
-    margin-left: 50px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: rgba(127, 255, 212, 0.15);
 }
 
@@ -254,84 +316,87 @@ button {
     padding-top: 50px;
 }
 
-/* ------------------------------------------------- */
-/* FOOTER */
-/* ------------------------------------------------- */
 
-footer {
-    background-color: #333;
-    padding: 50px;
-}
-
-.footer-nav {
-    list-style: none;
-    float: left;
-}
-
-.social-links {
-    list-style: none;
-    float: right
-}
-
-.footer-nav li,
-.social-links li {
+/*----------section3--------*/
+.section3 {
     display: inline-block;
-    margin-right: 20px;
-}
-
-.footer-nav li:last-child,
-.social-links li:last-child {
-   margin-right: 0;
-}
-
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.social-links li a:link,
-.social-links li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #888;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-.footer-nav li a:hover, 
-.footer-nav li a:active {
-    color: #ddd;   
-}
-
-.social-links li:link,
-.social-links li:visited {
-    font-size: 180%;
-}
-
-.ion-social-facebook,
-.ion-social-twitter,
-.ion-social-googleplus,
-.ion-social-instagram {
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-.ion-social-facebook:hover {
-    color: #3b5998;
-}
-
-.ion-social-twitter:hover {
-    color: #00aced;
-}
-
-.ion-social-googleplus:hover {
-    color: #dd4539;
-}
-
-.ion-social-instagram:hover {
-    color: #517fa4;
-}
-
-footer p {
-    color: #888;
+    padding-top: 50px;
     text-align: center;
-    font-size: 90%;
-    margin-top: 30px;
 }
+
+.section3 h3 {
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: "Lora";
+}
+
+.section3 h4 {
+    padding-top: 10px;
+}
+
+.section3 p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section3 .row {
+    padding-left: 250px;
+}
+
+.section3 .category {
+    height: 50px;
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 25px;
+}
+
+.section3 .writer {
+    padding-top: 30px;
+}
+
+
+/*-------section4------------*/
+.section4 {
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgba(127, 255, 212, 0.15);
+    width: 100%;
+}
+
+.section4 h3 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Lora';
+}
+
+.section4 h4 {
+    font-size: 15px;
+    font-family: 'Lora';
+}
+
+.section4 p {
+    padding-bottom: 20px;
+    
+}
+
+.section4 img {
+    padding-bottom: 30px;
+}
+
+.section4 div p {
+    padding-top: 10px;
+}
+.section4 img:after {  
+    display: block;
+    height: 1px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+}
+
+/*-------section5------*/
+
+
