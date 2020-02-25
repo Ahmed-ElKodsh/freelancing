@@ -199,7 +199,7 @@ input:focus {
 button {
   /* Just a little styling to make it pretty */
     border:1px solid #6a2863;
-    border-radius: 30%;
+    border-radius: 25%;
     background: #6a2863;
     color: white;
     padding: 15px;
@@ -225,10 +225,8 @@ button {
 
 /*-------section2-----*/
 .section2 {
-    position: absolute;
     margin-top: 100px;
     display: flex;
-    
 }
 
 .section2 img {
@@ -238,11 +236,23 @@ button {
 }
 
 .section2 div {
-    padding-top: 150px; 
-    margin-right: 20px;
+    padding-top: 100px; 
+    margin-left: 50px;
+    padding-right: 100px;
+    background-color: rgba(127, 255, 212, 0.15);
 }
 
+.section2 h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Lora";
+}
 
+.section2 div a {
+    display: block;
+    padding-top: 50px;
+}
 
 /* ------------------------------------------------- */
 /* FOOTER */
