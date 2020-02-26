@@ -323,18 +323,36 @@ button {
     padding-top: 50px;
     text-align: center;
 }
-
 .section3 h3 {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-left: 220px;
     font-size: 30px;
     font-family: "Lora";
+}
+.section3 .subtitle {
+    padding-bottom: 25px;
+    padding-left: 220px;
+}
+
+
+.section3 .col {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 5%;
+    -webkit-box-shadow: 2px 2px 0 #dddddd;
+    box-shadow: 2px 2px 0 #dddddd;
+}
+
+.section3 .col:hover {
+    box-shadow: 5px 5px 5px #dddddd;
 }
 
 .section3 h4 {
     padding-top: 10px;
+    
 }
 
-.section3 p {
+.section3 .row p {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -346,13 +364,15 @@ button {
 .section3 .category {
     height: 50px;
     width: 200px;
-    margin-top: 15px;
+    margin-top: 40px;
     border-radius: 25px;
+    margin-left: 150px;
 }
 
 .section3 .writer {
     padding-top: 30px;
 }
+
 
 
 /*-------section4------------*/
@@ -397,7 +417,36 @@ button {
     margin: 0 auto;
 }
 
+
 /*-------section5------*/
+.section5 h6,
+.section5 h3,
+.section5 p {
+    text-align: center;
+}
+
+.section5 h6 {
+    margin-top: 70px;
+    padding-bottom: 5px;
+}
+
+.section5 .title {
+    font-family: 'Lora';
+    font-size: 40px;
+}
+
+.section5 p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section5 ul p {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-align: left;
+}
 
 .section-plans {
     background-color: #f4f4f4;
@@ -407,50 +456,120 @@ button {
     background-color: #fff;
     border-radius: 5px;
     width: 90%;
+    height: 95%;
     margin-left: 5%;
     -webkit-box-shadow: 0 2px 2px #dddddd;
     box-shadow: 0 2px 2px #dddddd;  /* box-shadow: (Xaxis Yaxis blurValue color) add box background shadow effect */
 }
 
+
 .plan-box div {
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
+    
 }
-
 
 .plan-box div:first-child {
     background-color: #fcfcfc;
     border-top-left-radius: 5px;  /* fix the radius rounded edges */
+    height: 200px;
+    width: auto;
+    padding: 50px;
     border-top-right-radius: 5px;
 }
 
 .plan-box div:last-child {
     text-align: center;
     border: 0;
+    margin-bottom: 100px;
 }
-
 
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
-    font-weight: 100;
-    color: #e67e22;
+    font-weight: 700;
+    color: #e622b1;
 }
 
 .plan-price span {
     font-size: 30%;
     font-weight: 300;
+    padding-left: 10px;
 }
 
 .plan-price-meal {
     font-size: 80%;
+    text-align: right;
 }
 
 .plan-box ul {
-    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    text-align: right;
 }
 
-.plan-box ul li {
-    padding: 5px 0;
+.plan-box ul:hover {
+    text-decoration: underline;
+
 }
 
+.plan-box:hover {
+    box-shadow: 0 20px 20px #dddddd;
+}
+.plan-box ul:hover{
+    
+}
+.plan-price:hover {
+    color: #fff;
+}
+.plan-box div:first-child:hover {
+    background-color: #e622b1;
+    color: #fff; 
+}
+
+
+/* ------Testimonials--------*/
+.testimonials {
+    background-color: rgba(127, 255, 212, 0.15);
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 150px;
+    
+}
+
+.testimonials .subtitle {
+    padding-bottom: 50px;
+}
+
+.testimonials h3 {
+    font-family: 'lora';
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.testimonials img {
+    border-radius: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.testimonials .row {
+    padding-left: 130px;
+}
+
+.testimonials .col {
+    box-shadow: 0 2px 2px #dddddd;
+    width: 25%;
+    margin-left: 45px;
+}
+
+.testimonials .col:hover {
+    color: #fff;
+    background-color: rgba(46, 159, 146, 0.99);
+}
+
+.testimonials .name {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
