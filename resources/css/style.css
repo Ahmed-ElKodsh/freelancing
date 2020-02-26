@@ -561,7 +561,7 @@ button {
 .testimonials .col {
     box-shadow: 0 2px 2px #dddddd;
     width: 25%;
-    margin-left: 45px;
+    margin-left: 50px;
 }
 
 .testimonials .col:hover {
@@ -572,4 +572,32 @@ button {
 .testimonials .name {
     padding-top: 30px;
     padding-bottom: 20px;
+}
+
+
+/*-------section6-------*/
+
+.section6 {
+    padding-top: 70px;
+}
+
+.section6 .img {
+    padding-bottom: 20px;
+}
+
+.section6 .subtitle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section6 ul {
+    list-style: none;
+}
+.section6 ul li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.section6 img:last-child {
+    width: 150px;
 }
