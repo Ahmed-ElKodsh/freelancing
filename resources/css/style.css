@@ -203,7 +203,7 @@ button {
     background: #6a2863;
     color: white;
     padding: 15px;
-    width: 120px;
+    width: 100px;
 }
 
 
@@ -212,21 +212,21 @@ button {
 }
 
 .SearchBox-query {
-  // Shrink and grow as needed, but never shrink so
-  // small that we can't read the placeholder
+/*  // Shrink and grow as needed, but never shrink so*/
+/*  // small that we can't read the placeholder*/
   flex: 1 0 8em;
 }
 
 .SearchBox-submitBtn {
-  // Never shrink or grow
+/*  // Never shrink or grow*/
   flex: 0 0 auto;
 }
 
 .Field--is-search:before {
-  // Don't shrink or grow and use a default size
+/*  // Don't shrink or grow and use a default size*/
   flex: 0 0 2.75em;
 
-  // Use flexbox to center the icon
+/*  // Use flexbox to center the icon*/
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -235,7 +235,7 @@ button {
 /* VISUAL DESIGN DETAILS */
 .SearchBox {
   margin: 3rem auto 0;
-  max-width: 80%;
+  max-width: 50%;
 }
 
 .Field--is-search:before {
@@ -437,7 +437,7 @@ button {
 
 .section5 p {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .section5 ul p {
@@ -455,8 +455,8 @@ button {
 .plan-box {
     background-color: #fff;
     border-radius: 5px;
-    width: 90%;
-    height: 95%;
+    width: 80%;
+    height: 75%;
     margin-left: 5%;
     -webkit-box-shadow: 0 2px 2px #dddddd;
     box-shadow: 0 2px 2px #dddddd;  /* box-shadow: (Xaxis Yaxis blurValue color) add box background shadow effect */
@@ -472,7 +472,7 @@ button {
 .plan-box div:first-child {
     background-color: #fcfcfc;
     border-top-left-radius: 5px;  /* fix the radius rounded edges */
-    height: 200px;
+    height: 175px;
     width: auto;
     padding: 50px;
     border-top-right-radius: 5px;
@@ -481,7 +481,7 @@ button {
 .plan-box div:last-child {
     text-align: center;
     border: 0;
-    margin-bottom: 100px;
+
 }
 
 .plan-price {
@@ -579,25 +579,62 @@ button {
 
 .section6 {
     padding-top: 70px;
+    font-family: 'Open Sans';
 }
 
+.section6 .col {
+    padding-left: 20px;
+}
 .section6 .img {
     padding-bottom: 20px;
 }
 
 .section6 .subtitle {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    line-height: 15px;
+    font-size: 12px;
 }
 
 .section6 ul {
     list-style: none;
+    padding-bottom: 20px;
 }
 .section6 ul li {
     display: inline-block;
-    padding: 10px 10px;
+}
+.section6 .social-links {
+    padding-left: 15px;
+}
+.section6 .blogs {
+    padding-left: 65px;
+}
+.section6 .blogs img {
+    float: left;
+    width: 100px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.section6 .blogs li p{
+    padding-top: 29px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    
+}
+.section6 .blogs .date {
+    color: #e622b1;
+    font-size: 10px;
+    font-family: 'Open Sans';
 }
 
-.section6 img:last-child {
+.section6 .instagram {
+    padding-top: 15px;
     width: 150px;
+}
+.section6 .morePhotos {
+    display: block;
+    padding-top: 20px;
+    font-size: 12px;
+    text-decoration: none;
 }
