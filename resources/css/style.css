@@ -415,6 +415,7 @@ background-color: #d02184;
 .section4 h4 {
     font-size: 15px;
     font-family: 'Lora';
+    
 }
 
 .section4 p {
@@ -443,14 +444,28 @@ background-color: #d02184;
 .section4 .works {
     font-size: 15px;
 }
-.section4 img:after {  
+.section4 h4:before {  
     display: block;
-    height: 1px;
+    height: 2px;
+    background-color: #d02184;
+    content: " ";
+    width: 55px;
+    margin: 0 auto 10;
+    
+}
+
+
+/*
+h2:after {   
+    display: block;
+    height: 2px;
     background-color: #e67e22;
     content: " ";
     width: 100px;
     margin: 0 auto;
+    margin-top: 30px;
 }
+*/
 
 
 /*-------section5------*/
