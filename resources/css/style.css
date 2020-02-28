@@ -10,7 +10,7 @@
 html,
 body {
 /*    background-color: #fff;*/
-    color: #000;
+    color: #404f54;
     font-family: 'Roboto', 'Lora', 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 13px; /* then use relative percentages, fluid design */
@@ -52,34 +52,34 @@ input[type=submit] {  /* :link => normal state, pseudo classes that describe the
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] { 
-    background-color: #9b9794;
-    border: 1px solid #9b9794; 
+    background-color: #404f54;
+    border: 1px solid #404f54; 
     color: #fff;
     margin-right: 25px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #9b9794; 
-    color: #9b9794;
+    border: 1px solid #404f54; 
+    color: #404f54;
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #9b9794;
+    background-color: #404f54;
 }
 
 .btn-full:hover,
 .btn-full:active,
 input[type=submit] { 
-    border: 1px solid #9b9794; 
+    border: 1px solid #404f54; 
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #9b9794; 
+    border: 1px solid #404f54; 
     color: #fff;
 }
 
@@ -271,17 +271,19 @@ button {
 
 /*------section1----*/
 .section1{
-    font-family: 'Open Sans';
+    font-family: 'Lora';
     margin-top: 100px;
 }
 
 .section1 h3 {
-    color: #348b6a;
+    color: #1baba1;
     margin-bottom: 20px;
 }
 
 .section1 p {
-    font-size: 13px;
+    font-family: 'Open Sans';
+    line-height: 15px;
+    font-size: 12px;
 }
 
 
@@ -304,6 +306,12 @@ button {
     background-color: rgba(127, 255, 212, 0.15);
 }
 
+.section2 p{
+    font-family: 'Open Sans';
+    line-height: 15px;
+    font-size: 12px;
+}
+
 .section2 h3 {
     margin-bottom: 20px;
     font-size: 20px;
@@ -313,7 +321,9 @@ button {
 
 .section2 div a {
     display: block;
+    color: #1baba1;
     padding-top: 50px;
+    text-decoration: none;
 }
 
 
@@ -345,6 +355,7 @@ button {
 
 .section3 .col:hover {
     box-shadow: 5px 5px 5px #dddddd;
+    
 }
 
 .section3 h4 {
@@ -353,6 +364,9 @@ button {
 }
 
 .section3 .row p {
+    font-family: 'Open Sans';
+    line-height: 15px;
+    font-size: 12px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -362,11 +376,18 @@ button {
 }
 
 .section3 .category {
+background-color: #d02184;
     height: 50px;
     width: 200px;
     margin-top: 40px;
     border-radius: 25px;
     margin-left: 150px;
+    border-color: #fff;
+}
+
+.section3 .category:hover,
+.section3 .category:clicked {
+    color: #404f54;
 }
 
 .section3 .writer {
@@ -380,7 +401,7 @@ button {
     display: inline-block;
     margin-top: 50px;
     text-align: center;
-    background-color: rgba(127, 255, 212, 0.15);
+    background-color: #f4fafa;
     width: 100%;
 }
 
@@ -397,16 +418,30 @@ button {
 }
 
 .section4 p {
+    font-family: 'Open Sans'; 
+    line-height: 15px;
+    font-size: 12px;
     padding-bottom: 20px;
     
 }
 
-.section4 img {
-    padding-bottom: 30px;
-}
-
-.section4 div p {
+.section4 .t1 {
     padding-top: 10px;
+}
+.section4 .t2 {
+    padding-top: 18px;
+}
+.section4 .t3 {
+    padding-top: 10px;
+}
+.section4 .t4 {
+    padding-top: 12.5px;
+}
+.section4 p {
+    padding-top: 10px
+}
+.section4 .works {
+    font-size: 15px;
 }
 .section4 img:after {  
     display: block;
@@ -423,16 +458,19 @@ button {
 .section5 h3,
 .section5 p {
     text-align: center;
+    line-height: 10px;
 }
 
 .section5 h6 {
     margin-top: 70px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .section5 .title {
     font-family: 'Lora';
-    font-size: 40px;
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
 .section5 p {
@@ -443,7 +481,7 @@ button {
 .section5 ul p {
     padding-top: 10px;
     padding-left: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 12px;
     text-align: left;
 }
@@ -488,7 +526,7 @@ button {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 700;
-    color: #e622b1;
+    color: #d02184;
 }
 
 .plan-price span {
@@ -523,18 +561,23 @@ button {
     color: #fff;
 }
 .plan-box div:first-child:hover {
-    background-color: #e622b1;
+    background-color: #d02184;
     color: #fff; 
 }
 
 
 /* ------Testimonials--------*/
 .testimonials {
-    background-color: rgba(127, 255, 212, 0.15);
+    background-color: #f4fafa;
     padding-top: 50px;
     text-align: center;
     padding-bottom: 150px;
     
+}
+.testimonials h5 {
+    font-size: 9px;
+    font-family: 'Loar';
+    letter-spacing: 1px;
 }
 
 .testimonials .subtitle {
@@ -566,10 +609,12 @@ button {
 
 .testimonials .col:hover {
     color: #fff;
-    background-color: rgba(46, 159, 146, 0.99);
+    background-color: #1baba1;
 }
 
 .testimonials .name {
+    color: #1baba1;
+    font-weight: 700;
     padding-top: 30px;
     padding-bottom: 20px;
 }
@@ -592,6 +637,7 @@ button {
 .section6 .subtitle {
     padding-top: 20px;
     padding-bottom: 30px;
+    font-family: 'Open Sans';
     line-height: 15px;
     font-size: 12px;
 }
@@ -604,6 +650,7 @@ button {
     display: inline-block;
 }
 .section6 .social-links {
+    color: #5ec4bd;
     padding-left: 15px;
 }
 .section6 .blogs {
@@ -630,7 +677,7 @@ button {
 
 .section6 .instagram {
     padding-top: 15px;
-    width: 150px;
+    width: 160px;
 }
 .section6 .morePhotos {
     display: block;
